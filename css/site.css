@@ -1,8 +1,31 @@
+body {
+  background-color: #aaa;
+}
+.container {
+  border-left: 2px solid #999;
+  border-right: 2px solid #999;
+  background-color: #f7f7f7;
+}
+.rounded {
+  border: 2px solid #999;
+  border-radius: 5px;  
+}
+.rounded-bottom {
+  border-top: none;
+  border-left: 2px solid #999;
+  border-right: 2px solid #999;
+  border-bottom: 2px solid #999;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .pull-down {
     vertical-align: bottom;
 }
 span.larger {
     font-size: 2em;
+}
+.scrollspy a {
+  color: #777;
 }
 .scrollspy > .nav .active {
   font-weight: bold;
@@ -20,6 +43,7 @@ span.larger {
   margin-left: 10px;
   font-weight: normal;
   font-size: .85em;
+  color: #777;
 }
 
 .scrollspy > .nav .nav span {
@@ -56,4 +80,8 @@ span.larger {
 
 .affix-bottom {
   position: absolute;
+}
+.navbar-default {
+  background-color: transparent;
+  border: none;
 }
