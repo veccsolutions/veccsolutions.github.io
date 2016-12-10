@@ -1,0 +1,40 @@
+.pull-down {
+    vertical-align: bottom;
+}
+span.larger {
+    font-size: 2em;
+}
+.scrollspy > .nav .active {
+  font-weight: bold;
+}
+
+.scrollspy > .nav .nav {
+  display: none;
+}
+
+.scrollspy > .nav .active .nav {
+  display: block;
+}
+
+.scrollspy > .nav .nav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+
+.scrollspy > .nav .nav span {
+  margin: 0 5px 0 2px;
+}
+
+.scrollspy > .nav .nav .active a,
+.scrollspy > .nav .nav .active:hover a,
+.scrollspy > .nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+
+.scrollspy > .nav .nav .active span,
+.scrollspy > .nav .nav .active:hover span,
+.scrollspy > .nav .nav .active:focus span {
+  display: none;
+}
