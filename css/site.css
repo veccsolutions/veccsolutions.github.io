@@ -10,14 +10,14 @@ body {
 }
 .rounded {
 /*  border: 2px solid #999;*/
-  border: 2px solid #a88c74;
+  border: 2px solid #514032;
   border-radius: 5px;  
 }
 .rounded-bottom {
   border-top: none;
-  border-left: 2px solid #a88c74;
-  border-right: 2px solid #a88c74;
-  border-bottom: 2px solid #a88c74;
+  border-left: 2px solid #514032;
+  border-right: 2px solid #514032;
+  border-bottom: 2px solid #514032;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
