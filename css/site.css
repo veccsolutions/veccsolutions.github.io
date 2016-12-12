@@ -3,21 +3,21 @@ body {
   background-color: #a88c74;
 }
 .container {
-  border-left: 2px solid #999;
-  border-right: 2px solid #999;
+  border-left: 2px solid #8e8e8e;
+  border-right: 2px solid #8e8e8e;
   /*background-color: #f7f7f7;*/
   background-color: #e2dad2;
 }
 .rounded {
 /*  border: 2px solid #999;*/
-  border: 2px solid #514032;
+  border: 2px solid #8e8e8e;
   border-radius: 5px;  
 }
 .rounded-bottom {
   border-top: none;
-  border-left: 2px solid #514032;
-  border-right: 2px solid #514032;
-  border-bottom: 2px solid #514032;
+  border-left: 2px solid #8e8e8e;
+  border-right: 2px solid #8e8e8e;
+  border-bottom: 2px solid #8e8e8e;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
