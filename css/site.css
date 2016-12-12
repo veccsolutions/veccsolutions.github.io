@@ -1,10 +1,12 @@
 body {
-  background-color: #aaa;
+  /*background-color: #aaa;*/
+  background-color: #a88c74;
 }
 .container {
   border-left: 2px solid #999;
   border-right: 2px solid #999;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
+  background-color: #e2dad2;
 }
 .rounded {
   border: 2px solid #999;
@@ -25,7 +27,8 @@ span.larger {
     font-size: 2em;
 }
 .scrollspy a {
-  color: #777;
+  /*color: #777;*/
+  color: #514032;
 }
 .scrollspy > .nav .active {
   font-weight: bold;
@@ -43,7 +46,8 @@ span.larger {
   margin-left: 10px;
   font-weight: normal;
   font-size: .85em;
-  color: #777;
+  /*color: #777;*/
+  color: #514032;
 }
 
 .scrollspy > .nav .nav span {
@@ -84,4 +88,9 @@ span.larger {
 .navbar-default {
   background-color: transparent;
   border: none;
+}
+span,
+p,
+body {
+  color: #514032;
 }
