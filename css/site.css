@@ -9,14 +9,15 @@ body {
   background-color: #e2dad2;
 }
 .rounded {
-  border: 2px solid #999;
+/*  border: 2px solid #999;*/
+  border: 2px solid #a88c74;
   border-radius: 5px;  
 }
 .rounded-bottom {
   border-top: none;
-  border-left: 2px solid #999;
-  border-right: 2px solid #999;
-  border-bottom: 2px solid #999;
+  border-left: 2px solid #a88c74;
+  border-right: 2px solid #a88c74;
+  border-bottom: 2px solid #a88c74;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -59,7 +60,8 @@ span.larger {
 .scrollspy > .nav .nav .active:focus a {
   font-weight: bold;
   /*padding-left: 30px;*/
-  border-left: 5px solid black;
+  /*border-left: 5px solid black;*/
+  border-left: 5px solid #514032;
   margin-left:5px;
 }
 
