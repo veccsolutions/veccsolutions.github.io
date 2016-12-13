@@ -1,0 +1,18 @@
+{% assign nanaDiary = site.diaries | where_exp:"item","item.diary == 'nana'" | where_exp:"item","item.section contains 'home'" | group_by:"section" %}
+<section id="home">
+    <div class="row">
+        <h3>At Home: October 18, 1928 - May 2, 1931</h3>
+    </div>
+</section>
+{% for day in nanaDiary %}
+<section id="{{day.name}}">
+{% for entry in day.items %}
+    <div class="row">
+        <div class="col-xs-12 col-md-2">{{entry.date | date: "%b %d-%Y"}}{% if entry.dateSuffix %} {{entry.dateSuffix}}{% endif %}</div>
+        <div class="col-xs-12 col-md-10">
+            {{entry.output}}
+        </div>
+    </div>
+{% endfor %}
+</section>
+{% endfor %}

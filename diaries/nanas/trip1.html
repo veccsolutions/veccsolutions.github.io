@@ -1,0 +1,47 @@
+<section id="trip1">
+    <div class="row">
+        <h3>Trip 1: September 22, 1927 - June 20, 1928</h3>
+    </div>
+</section>
+<section id="trip1-facingpage">
+    <div class="row">
+        <p>
+            Facing Page:
+                I am writing this little Diary for my two daughters Harriett and Lucy who,
+                tho not able to go with me on my journey, will nevertheless will be with me
+                in thoughts and good wishes every step of the way.
+        </p>
+        <p>
+            Mary E. Robinson<br />
+            Sep 22-1927
+        </p>
+        <p class="text-center">
+            <em>
+                Some ships sail east<br />
+                and some sail west<br />
+                By the selfsame wind that blows.<br />
+                Tis the set of the sail and not the gales<br />
+                that determine which way they go.<br />
+                Like the winds of the East are the forces of fate.<br />
+                as we travel along thru life<br />
+                Tis the set of the soul that determines the goal<br />
+                and not the calm or strife.<br />
+            </em>
+        </p>
+    </div>
+</section>
+{% assign nanaDiary = site.diaries | where_exp:"item","item.diary == 'nana'" | where_exp:"item","item.section contains 'trip1'" | group_by:"section" %}
+
+{% for day in nanaDiary %}
+<section id="{{day.name}}">
+{% for entry in day.items %}
+    <div class="row">
+        <div class="col-xs-12 col-md-2">{{entry.date | date: "%b %d-%Y"}}{% if entry.dateSuffix %} {{entry.dateSuffix}}{% endif %}</div>
+        <div class="col-xs-12 col-md-10">
+            {{entry.output}}
+        </div>
+    </div>
+{% endfor %}
+</section>
+{% endfor %}
+  
