@@ -96,3 +96,6 @@ p,
 body {
   color: #514032;
 }
+.diaryEntry {
+  padding-top: 7px;
+}
