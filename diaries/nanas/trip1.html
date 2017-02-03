@@ -36,7 +36,7 @@
 <section id="{{day.name}}">
 {% for entry in day.items %}
     <div class="row diaryEntry">
-        <div class="col-xs-12 col-md-2" title="{{entry.originalDate}}">{{entry.date | date: "%b %d-%Y"}}{% if entry.dateSuffix %} {{entry.dateSuffix}}{% endif %}</div>
+        <div class="col-xs-12 col-md-2" title="{{entry.originalDate}}">{% if entry.hideDate != true %}{{entry.date | date: "%b %d-%Y"}}{% if entry.dateSuffix %} {{entry.dateSuffix}}{% endif %}{% endif %}</div>
         <div class="col-xs-12 col-md-10">
             {{entry.output}}
         </div>
